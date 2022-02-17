@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,11 @@
     <title>Unity WebGL Player | shoot</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=768 height=480 style="width: 768px; height: 480px; background: #231F20"></canvas>
+    <script>
+        var canvas = document.querySelector("#unity-canvas");
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
+    </script>
     <script src="Build/web.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
